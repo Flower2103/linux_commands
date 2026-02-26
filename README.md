@@ -15,8 +15,12 @@ Se debe construir una API que permita ejecutar únicamente comandos autorizados 
 ## 📋Requisitos
 
 - Python 3.10+
-- Ubuntu/Debian
+- Ubuntu
 - Usuario Linux limitado
+
+## Entorno de desarrollo
+- OS: Ubuntu Server 24.04 LTS
+- Virtualización: VirtualBox
 
 ## ⚙️Instalación
 
@@ -142,9 +146,3 @@ curl -X POST http://localhost:8000/system/execute \
   -H "Content-Type: application/json" \
   -d '{"command": "uptime; rm -rf /", "params": []}'
 ```
-
-
-## Entorno de desarrollo
-Probado y aprobado en:
-- OS: Ubuntu Server 24.04 LTS
-- Virtualización: VirtualBox
