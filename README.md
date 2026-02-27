@@ -4,8 +4,8 @@
 API REST desarrollada en Flask que permite ejecutar comandos Linux predefinidos de forma segura, con autenticación basada en usuarios reales del sistema operativo.
 
 ## Creadores
-- Alejandra
-- Flor
+- Alejandra Rodriguez
+- Flor Mayon
 
 ## 🎯Objetivo General
 Desarrollar una API REST que permita ejecutar comandos Linux predefinidos en el servidor, implementando controles estrictos de seguridad para prevenir vulnerabilidades como Command Injection, acceso no autorizado y ejecución arbitraria de código.
@@ -117,7 +117,7 @@ Para agregar un nuevo comando, solo añade una entrada al diccionario con su rut
 | Command Injection | `shell=False` + argv como lista |
 | Ejecución arbitraria | Whitelist de comandos y parámetros en `ALLOWED_COMMANDS` |
 | Acceso no autorizado | JWT con expiración de 30 minutos |
-| Escalada de privilegios | Servidor corre con usuario limitado `pako` |
+| Escalada de privilegios | Servidor corre con usuario limitado `user` |
 | Entorno inseguro | Subprocesos con `PATH` mínimo |
 
 ## Pruebas
